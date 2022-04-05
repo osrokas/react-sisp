@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-sisp/static/css/main.dc6605c3.css",
-    "main.js": "/react-sisp/static/js/main.be86b7ea.js",
+    "main.js": "/react-sisp/static/js/main.4a058a1e.js",
     "static/js/519.f155e6db.chunk.js": "/react-sisp/static/js/519.f155e6db.chunk.js",
     "static/js/5626.acd38563.chunk.js": "/react-sisp/static/js/5626.acd38563.chunk.js",
     "static/js/9512.263feb13.chunk.js": "/react-sisp/static/js/9512.263feb13.chunk.js",
@@ -292,7 +292,7 @@
     "static/media/SM-Slider_TrackBackground_hover.svg": "/react-sisp/static/media/SM-Slider_TrackBackground_hover.5dcf34ac7d59f98735ad.svg",
     "static/media/SM-Slider_TrackBackground_idle.svg": "/react-sisp/static/media/SM-Slider_TrackBackground_idle.cc7bd7014a003ba1844f.svg",
     "main.dc6605c3.css.map": "/react-sisp/static/css/main.dc6605c3.css.map",
-    "main.be86b7ea.js.map": "/react-sisp/static/js/main.be86b7ea.js.map",
+    "main.4a058a1e.js.map": "/react-sisp/static/js/main.4a058a1e.js.map",
     "519.f155e6db.chunk.js.map": "/react-sisp/static/js/519.f155e6db.chunk.js.map",
     "5626.acd38563.chunk.js.map": "/react-sisp/static/js/5626.acd38563.chunk.js.map",
     "9512.263feb13.chunk.js.map": "/react-sisp/static/js/9512.263feb13.chunk.js.map",
@@ -503,6 +503,6 @@
   },
   "entrypoints": [
     "static/css/main.dc6605c3.css",
-    "static/js/main.be86b7ea.js"
+    "static/js/main.4a058a1e.js"
   ]
 }
