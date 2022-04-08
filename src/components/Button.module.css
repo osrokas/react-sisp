@@ -1,0 +1,21 @@
+.waze {
+  font-weight: bold;
+  border: 2px solid #34456d;
+  border-radius: 12px;
+  background-color: #34456d;
+  color: #f3f3f3;
+  width: 260px;
+  height: 40px;
+  transition: 0.5s;
+  font-size: 12pt;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  position: static;
+}
+
+.waze:hover {
+  background-color: #f3f3f3;
+  color: #34456d;
+}

@@ -1,0 +1,12 @@
+.header-css {
+  background-color: #0c0d39;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-css {
+  position: fixed;
+  left: 0px;
+}

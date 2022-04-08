@@ -1,0 +1,13 @@
+.butt {
+  width: 100px;
+  height: 40px;
+  background-color: red;
+}
+
+.esri-bookmarks__bookmark .panel-result {
+  cursor: pointer;
+  margin: 2px 0;
+  background-color: green;
+}
+
+@import "https://js.arcgis.com/4.23/@arcgis/core/assets/esri/themes/dark/main.css";

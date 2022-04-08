@@ -1,0 +1,73 @@
+.overlay-css {
+  position: fixed;
+  background: rgba(30, 83, 230, 0.329);
+  width: 400px;
+  height: 400px;
+  top: 360px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.mapparking-css {
+  height: 860px;
+}
+
+.mapparking-css .esri-button {
+  color: #fff;
+}
+
+.mapparking-css .esri-bookmarks__bookmark {
+  background-color: rgba(30, 83, 230, 0.329);
+  color: black;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.mapparking-css .esri-popup {
+  background-color: rgba(30, 83, 230, 0.329);
+}
+
+.mapparking-css .esri-popup__content {
+  background-color: rgba(30, 83, 230, 0.329);
+}
+
+.mapparking-css .esri-feature__main-container {
+  background-color: rgba(30, 83, 230, 0.329);
+  color: black;
+}
+
+.mapparking-css .esri-bookmarks__bookmark :hover {
+  background-color: rgba(212, 98, 255, 0.329);
+  color: red;
+}
+
+.mapparking-css .esri-popup__main-container {
+  background-color: rgba(30, 83, 230, 255);
+  position: fixed;
+  float: left;
+  left: 100px;
+}
+
+.mapparking-css .esri-popup__main-container {
+  background-color: rgba(30, 83, 230, 255);
+  position: fixed;
+  float: left;
+  left: 100px;
+  border-radius: 20px;
+  color: red;
+}
+
+.mapparking-css .esri-feature-media__chart {
+  background-color: rgba(30, 83, 230, 255);
+  color: red;
+}
+
+.mapparking-css .esri-feature__content-element {
+  background-color: #0c0d39;
+  border-radius: 10px;
+}
+
+.mapparking-css .esri-widget {
+  background-color: rgba(12, 13, 57, 255);
+}

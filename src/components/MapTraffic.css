@@ -1,0 +1,293 @@
+.overlay-css {
+  position: fixed;
+  background: rgba(30, 83, 230, 0.329);
+  width: 400px;
+  height: 400px;
+  top: 360px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.map-css {
+  height: 860px;
+}
+
+.map-css .esri-button {
+  color: #fff;
+}
+
+.map-css .esri-bookmarks__bookmark {
+  background-color: rgba(30, 83, 230, 0.329);
+  color: black;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.maps-css .esri-popup {
+  background-color: rgba(30, 83, 230, 0.329);
+}
+
+.maps-css .esri-popup__content {
+  background-color: rgba(30, 83, 230, 0.329);
+}
+
+.maps-css .esri-feature__main-container {
+  background-color: rgba(30, 83, 230, 0.329);
+  color: black;
+}
+
+.map-css .esri-bookmarks__bookmark :hover {
+  background-color: rgba(212, 98, 255, 0.329);
+  color: red;
+}
+
+.map-css .esri-popup__main-container {
+  background-color: rgba(30, 83, 230, 0.329);
+  position: fixed;
+  float: left;
+  left: 100px;
+}
+
+.map-css .esri-popup__main-container {
+  background-color: rgba(30, 83, 230, 0.329);
+  position: fixed;
+  float: left;
+  left: 100px;
+  border-radius: 20px;
+  color: red;
+}
+
+.map-css .esri-feature-media__chart {
+  background-color: rgba(30, 83, 230, 0.329);
+  color: red;
+}
+
+.map-css .esri-feature__content-element {
+  background-color: #0c0d39;
+  border-radius: 10px;
+}
+
+.map-css .esri-widget {
+  background-color: rgba(30, 83, 230, 0);
+}
+
+.panel-container {
+  position: absolute;
+  background-color: #0c14359f;
+  width: 400px;
+  height: 400px;
+
+  right: 20px;
+  top: 400px;
+}
+
+.panel-container .esri-widget {
+  background-color: #0c14359f;
+  box-sizing: border-box;
+  border: #d10000f1;
+}
+
+.panel-side {
+  padding: 2px;
+  box-sizing: border-box;
+  border: #0c0d39;
+  border-radius: 30px;
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  background-color: #0c14359f;
+  overflow: auto;
+  z-index: 60;
+}
+
+.panel-side h3 {
+  padding: 0 20px;
+  margin: 20px 0;
+  background-color: #0c143500;
+}
+
+#timeSlider {
+  width: 1200px;
+}
+
+
+.panel-side ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #0c14359f;
+}
+
+.panel-side li {
+  list-style: none;
+  padding: 10px 20px;
+
+  background-color: #0c14359f;
+}
+
+.pop-el {
+  z-index: 1;
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  color: red;
+  background-color: #0c0d396b;
+  border-radius: 20px;
+  margin: 200px;
+  overflow-y: auto;
+  overflow-y: auto;
+}
+
+#traffic_graphics {
+  box-sizing: border-box;
+  border: #d40000;
+}
+
+.bar-popup {
+  z-index: 1;
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  color: red;
+  background-color: #0c0d396b;
+  border-radius: 20px;
+  margin: 200px;
+  overflow-y: auto;
+  overflow-y: auto;
+}
+
+.esri-bookmarks__bookmark .panel-result {
+  cursor: pointer;
+  margin: 2px 0;
+  background-color: #0c14359f;
+}
+
+#barChart {
+  width: 30vh;
+  background-color: #b300ff93;
+  color: red;
+  position: absolute;
+  bottom: 2px;
+  margin-left: 80px;
+  overflow-y: auto;
+}
+
+.pop-el ::-webkit-scrollbar {
+  width: 10px;
+}
+
+.pop-el ::-webkit-scrollbar-track {
+  background-color: darkgrey;
+}
+
+.pop-el ::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.panel-container li {
+  color: rgb(255, 255, 255);
+}
+
+.panel-result-es div {
+  color: rgb(255, 255, 255);
+  height: 200px;
+  font-size: "30px";
+}
+
+.panel-container li:active {
+  color: rgba(255, 0, 0, 0);
+}
+
+.panel-container li:focus {
+  color: rgba(255, 0, 0, 0);
+}
+
+.panel-container li:hover {
+  color: rgba(255, 0, 0, 0);
+}
+.panel-result:hover,
+.panel-result:focus {
+  /* .panel-side li:hover,
+.panel-side li:focus { */
+  color: red;
+  background-color: rgba(212, 98, 255, 0.329);
+}
+/* width */
+.panel-container ::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+.panel-container ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(230, 34, 171, 0);
+  border-radius: 0px;
+}
+
+/* Handle */
+.panel-container ::-webkit-scrollbar-thumb {
+  background: #20316800;
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+.panel-container ::-webkit-scrollbar-thumb:hover {
+  background: #00000000;
+}
+
+
+
+.slider .esri-widget,
+.slider .esri-widget--button,
+.slider .esri-menu,
+.slider .esri-popup__main-container,
+.slider .esri-popup .esri-popup__pointer-direction,
+.slider .esri-popup .esri-popup__button,
+.slider .esri-button,
+.slider .esri-input,
+.slider .esri-slider .esri-widget .esri-slider--horizontal,
+.slider .esri-time-slider__slider,
+.slider .esri-slider__ticks,
+.slider .esri-slider__track,
+.slider .esri-slider__content,
+.slider .esri-time-slider__slider,
+.slider .slider .esri-component .esri-time-slider .esri-widget .esri-time-slider__mode--time-window .esri-time-slider__layout--wide .calcite-theme-dark
+.slider .esri-slider .esri-widget .esri-slider--horizontal,
+.slider .esri-widget a {
+  background-color: #0c143500;
+  color: #fff;
+}
+
+
+
+.slider .esri-time-slider__slider .esri-slider {
+  background-color: #0c143500;
+  color: #fff;
+  }
+
+.esri-ui-bottom-left  {
+  background-color: #0c0d392c;
+  border-radius: 10px;
+  /* Have each bar be a nice green */
+
+
+}
+
+.slider .esri-widget--button,
+.esri-ui-bottom-left {
+
+  transition: .5s;
+  /* Have each bar be a nice green */
+}
+.slider .esri-widget--button:hover,
+.esri-ui-bottom-left:hover{
+  background-color: #0c0d39;
+  border-radius: 10px;
+  transition: .5s;
+  /* Have each bar be a nice green */
+
+
+}
