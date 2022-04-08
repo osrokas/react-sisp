@@ -476,7 +476,64 @@ function MapTraffic() {
                           const buttons = document.querySelectorAll("li");
                           for (let i = 0; i < buttons.length;  i++) {
                               buttons[i].addEventListener("click", onClick);
-                              
+                              function onClick(event) {      
+                              // console.log(event)
+  
+                            queryLayer.where = `OBJECTID=${event.target.id}`;
+      
+                            layer.queryFeatures(queryLayer).then((queryres) => {
+                                // console.log('queryres   ' + queryres.features[0])
+                                if (highlight) {
+                                  highlight.remove();
+                                }
+                                const feature = queryres.features[0];
+                                highlight = layerView.highlight(
+                                  feature.attributes["OBJECTID"]
+                                );
+                                // console.log("id  " + feature.attributes["id_srautai"])
+                                // console.log("skaicius" + feature.attributes["car_count"]);
+                                // console.log(feature.attributes)
+
+                                cars.push(feature.attributes["car_count"])
+     
+                                // console.log(feature.attributes["car_count"])
+
+                                datePush.push(feature.attributes["data"])
+
+                                
+                                const count_car = cars
+                                
+
+                                const unix = datePush
+
+                                console.log('cars'+ cars)
+
+                                // setTraf([...traf, traf[traf.length - 1] + 10])
+                                // console.log(traf)
+                                // setDate([...date, date[date.length - 1] + '1'])
+                                // console.log(date)
+
+                                // console.log(traf)
+                                // console.log(unix)
+                                // Create a new JavaScript Date object based on the timestamp
+                                // multiplied by 1000 so that the argument is in milliseconds, not seconds.
+                                // var date = new Date(unix);
+                                // // Hours part from the timestamp
+                                // var day = date.getUTCDay();
+                                // var month = date.getMonth();
+                                // var year = date.getFullYear();
+                                // var hours = date.getHours();
+                                // // Minutes part from the timestamp
+                                // var minutes = "0" + date.getMinutes();
+                                // // Seconds part from the timestamp
+                                // var seconds = "0" + date.getSeconds();
+                                // // Will display time in 10:30:23 format
+                                // var formattedTime = year + '-' + month +  '-' +  day + '  ' + hours + ':' + minutes.substr(-2) 
+                                setTraf(cars) 
+                                setDate(unix)              
+              
+                            })
+              }
               
 
                           }                                       
@@ -566,64 +623,7 @@ function MapTraffic() {
           
             
         });
-function onClick(event) {      
-                              // console.log(event)
-  
-                            queryLayer.where = `OBJECTID=${event.target.id}`;
-      
-                            layer.queryFeatures(queryLayer).then((queryres) => {
-                                // console.log('queryres   ' + queryres.features[0])
-                                if (highlight) {
-                                  highlight.remove();
-                                }
-                                const feature = queryres.features[0];
-                                highlight = layerView.highlight(
-                                  feature.attributes["OBJECTID"]
-                                );
-                                // console.log("id  " + feature.attributes["id_srautai"])
-                                // console.log("skaicius" + feature.attributes["car_count"]);
-                                // console.log(feature.attributes)
 
-                                cars.push(feature.attributes["car_count"])
-     
-                                // console.log(feature.attributes["car_count"])
-
-                                datePush.push(feature.attributes["data"])
-
-                                
-                                const count_car = cars
-                                
-
-                                const unix = datePush
-
-                                console.log('cars'+ cars)
-
-                                // setTraf([...traf, traf[traf.length - 1] + 10])
-                                // console.log(traf)
-                                // setDate([...date, date[date.length - 1] + '1'])
-                                // console.log(date)
-
-                                // console.log(traf)
-                                // console.log(unix)
-                                // Create a new JavaScript Date object based on the timestamp
-                                // multiplied by 1000 so that the argument is in milliseconds, not seconds.
-                                // var date = new Date(unix);
-                                // // Hours part from the timestamp
-                                // var day = date.getUTCDay();
-                                // var month = date.getMonth();
-                                // var year = date.getFullYear();
-                                // var hours = date.getHours();
-                                // // Minutes part from the timestamp
-                                // var minutes = "0" + date.getMinutes();
-                                // // Seconds part from the timestamp
-                                // var seconds = "0" + date.getSeconds();
-                                // // Will display time in 10:30:23 format
-                                // var formattedTime = year + '-' + month +  '-' +  day + '  ' + hours + ':' + minutes.substr(-2) 
-                                setTraf(cars) 
-                                setDate(unix)              
-              
-                            })
-              }
        
 
 view.ui.add(timeSlider, {position: "bottom-left"})
